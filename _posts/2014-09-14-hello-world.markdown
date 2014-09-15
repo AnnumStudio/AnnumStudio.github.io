@@ -2,6 +2,7 @@
 layout: post
 title: "Hello world! GitHub Pages入门"
 date:   2014-09-15
+description: GitHub Pages入门
 categories: Introduction
 tags: Introduction GitHub
 image: http://jessicalouisebell.files.wordpress.com/2014/04/hyeres_-france-1932.jpg
