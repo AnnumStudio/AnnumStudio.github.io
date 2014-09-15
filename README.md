@@ -1,27 +1,79 @@
-##pizn.github.com
+mediator
+========
 
-这是 <a href="http://www.zhanxin.info" target="_blank" title="掌心">zhanxin.info</a> 在 GitHub 上使用 <a href="http://jekyllrb.com" target="_blank" >Jekyll</a> 搭建的个人博客的所有源代码。该博客的目的 用来<strong>快速</strong>记录工作，学习，生活的一点一滴。更多分享，更多交流，更多进步。
+A medium inspired Jekyll blog theme. The basic idea came from the Ghost theme 
+[Readium 2.0](http://www.svenread.com/readium-ghost-theme/). I use mediator on my own blog [The Base](blog.base68.com).
 
-This is the source code for <a href="http://www.zhanxin.info" target="_blank" title="zhanxin.info">zhanxin.info</a> -- powered by <a href="http://jekyllrb.com" target="_blank" title="jekyll">Jekyll</a>. And this blog use for fast recording my work, learning and life.
+Screenshots
+--------
+![screenshot](/assets/images/screenshot1.jpg)
+![screenshot](/assets/images/screenshot2.jpg)
+![screenshot](/assets/images/screenshot3.jpg)
 
-##如何达到快速呢？
+Features
+-------
+* Fully Responsive layout
+* Use header images in articles, if you want to (add tag "image" and url to the image in the front matter section of a post)
+* Minimal design
+* Featured article support
+* FontAwesome implemented for easy use of icons fonts
+* Free & Open Source Font usage
 
-发表一篇文章，就像写代码一样，直接在编辑器上进行书写和总结。不需要进入网站的后台什么的，就可以完成文章的编辑了。
+Getting Started
+---
+- [Fork this repository](https://github.com/dirkfabisch/mediator)
+- Clone it: `git clone https://github.com/YOUR-USER/mediator`
+- Install the [GitHub Pages gem](https://github.com/github/pages-gem) (includes Jekyll): `bundle install`
+- Run the jekyll server: `jekyll serve`
 
-编辑完之后，Git 提交就可以完成。随后的一些事情，Jekyll 就会帮你处理好。恩，我觉得这可以省了我好多时间。又可以像 CodeReview 一样来阅读自己的文章，学而时习之。
+You should have a server up and running locally at <http://localhost:4000>.
 
-##LICENSE
+Configuration
+-----
 
-pizn.github.com 上的文章采用<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank">署名-非商业性使用-相同方式共享</a>协议进行授权，转载请注明转自：<a href="http://pizn.github.com" target="_blank">zhanxin.info</a>.
+The main settings happen in side of the _config.yml file:
 
-设计界面由<a href="http://pizn.net" target="_blank">zhanxin.info</a>设计提供，图片视觉设计版权由 zhanxin.lin 所有。<del><a href="http://www.pizn.me" target="_blank">PIZn.me</a>的紫色主题是 PIZn 的私有主题，</del>如果你喜欢这个主题，请提前跟我说下，并注明是 <a href="http://www.zhanxin.info" target="_blank">zhanxin.lin</a>开发和设计的。谢谢。<del>PS: 我很鄙视别人用了我的劳动成果，还注明是他自己设计的。请尊重在下！</del>
+### Site
 
-站点其他代码采用  <a href="http://zh.wikipedia.org/wiki/MIT_License" target="_blank">MIT License 许可。</a>
+Main settings for the site 
 
-##联系我
+* **title**: name of your site
+* **description**: description of your site
+* **logo**: small logo for the site (300x * 300x)
+* **cover**: large background image on the index page 
 
-如果你也想像我这样来写博客，搭建 GitHub 博客，如果有啥不懂的，我们互相交流！
+* **name**: name site owner
+* **email**: mail address of the site owner
+* **author**: author name
+* **author_image**: small image of author (300x * 300px)
 
-邮箱: zhanxin.info@gmail.com
+ 
+### Social 
 
+The template allows to add all major social plattforms to your site.
+Fill the the form for each plattform. If you leave the share_* entries empty, the sharing buttons below a post are not shown.  
+
+* **icon**:	name of social plattform (must match a name of [font-awsome](http://fortawesome.github.io/Font-Awesome/) icon set )
+* **url**:	url of your account
+* **desc**: slogan of the plattform
+* **share_url**: share url
+* **share_title**: first part of url for the title
+* **share_link**: second part of the share url for the link to the post
+
+The Liquid template engine will magical combine the different parts to a share url. 
+
+```
+http://twitter.com/share?text=post_title&amp;url=post_url
+````
+
+See [_config.yml](https://github.com/dirkfabisch/mediator/blob/master/_config.yml) for more examples. 
+
+Licensing
+---------
+
+[MIT](https://github.com/dirkfabisch/madiator/blob/master/LICENSE) with no added caveats, so feel free to use this on your site without linking back to me or using a disclaimer or anything silly like that.
+
+Contact
+-------
+I'd love to hear from you at [@dirkfabisch](https://twitter.com/dirkfabisch). Feel free to open issues if you run into trouble or have suggestions. Pull Requests always welcome.
 
